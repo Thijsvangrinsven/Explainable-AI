@@ -1,0 +1,44 @@
+net
+{
+    node_size = (0 0);
+}
+
+node C
+{
+    label = "C";
+    states = ("" "" "" "" "");
+    subtype = number;
+    state_values = (0 1 2 3 4);
+}
+
+node B
+{
+    label = "B";
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+}
+
+node A
+{
+    label = "A1234567890123";
+    states = ("" "" "");
+    subtype = number;
+    state_values = (0 1 2);
+}
+
+potential (C | B A)
+{
+    model_nodes = ();
+    model_data = ( A + B );
+}
+
+potential (B)
+{
+    data = ( 0.2 0.2 0.6 );
+}
+
+potential (A)
+{
+    data = ( 0.1 0.2 0.7 );
+}

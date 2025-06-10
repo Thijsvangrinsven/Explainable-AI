@@ -1,0 +1,275 @@
+Mon Feb 17 15:02:53 2025
+
+
+Moral links:
+
+    Marrying CA125 and LVSI
+    Marrying Histology and CA125
+    Marrying MyometrialInvasion and PrimaryTumor
+    Marrying MyometrialInvasion and LVSI
+    Marrying MyometrialInvasion and Therapy
+    Marrying Recurrence and Therapy
+    Marrying Cytology and MyometrialInvasion
+    Marrying Cytology and PrimaryTumor
+    Marrying Cytology and Therapy
+
+
+Triangulating prime component with 4 members:
+    Therapy, Survival3yr, Recurrence, Survival5yr
+This component is a clique of cost 48
+
+Triangulating prime component with 4 members:
+    Survival1yr, Therapy, Survival3yr, Recurrence
+This component is a clique of cost 48
+
+Triangulating prime component with 4 members:
+    Histology, PrimaryTumor, MyometrialInvasion, Cytology
+This component is a clique of cost 54
+
+Triangulating prime component with 5 members:
+    LVSI, Histology, Therapy, MyometrialInvasion, Cytology
+This component is a clique of cost 144
+
+Triangulating prime component with 2 members:
+    Platelets, LNM
+This component is a clique of cost 4
+
+Triangulating prime component with 4 members:
+    LNM, Histology, p53, L1CAM
+This component is a clique of cost 24
+
+Triangulating prime component with 4 members:
+    PR, LNM, Histology, ER
+This component is a clique of cost 24
+
+Triangulating prime component with 4 members:
+    PR, LNM, Histology, L1CAM
+This component is a clique of cost 24
+
+Triangulating prime component with 5 members:
+    LVSI, LNM, Histology, Therapy, MyometrialInvasion
+This component is a clique of cost 144
+
+Triangulating prime component with 5 members:
+    LVSI, LNM, Histology, Therapy, Recurrence
+This component is a clique of cost 144
+
+Triangulating prime component with 5 members:
+    LVSI, LNM, CA125, Histology, Recurrence
+This component is a clique of cost 72
+
+Triangulating prime component with 3 members:
+    LNM, CA125, CTMRI
+This component is a clique of cost 8
+
+
+Total cost of triangulation for all prime components is 738
+
+
+Elimination sequence:
+
+    Survival5yr
+    Survival1yr
+    Survival3yr
+    ER
+    p53
+    L1CAM
+    PR
+    PrimaryTumor
+    Cytology
+    MyometrialInvasion
+    Therapy
+    Recurrence
+    LVSI
+    Histology
+    CTMRI
+    CA125
+    Platelets
+    LNM
+
+
+Cliques:
+
+Clique 12, 2 members, table size = 4:
+    LNM, Platelets
+
+Clique 11, 3 members, table size = 8:
+    LNM, CA125, CTMRI
+
+Clique 10, 5 members, table size = 72:
+    LNM, CA125, Histology, LVSI, Recurrence
+
+Clique 9, 5 members, table size = 144:
+    LNM, Histology, LVSI, Recurrence, Therapy
+
+Clique 8, 5 members, table size = 144:
+    LNM, Histology, LVSI, Therapy, MyometrialInvasion
+
+Clique 7, 5 members, table size = 144:
+    Histology, LVSI, Therapy, MyometrialInvasion, Cytology
+
+Clique 6, 4 members, table size = 54:
+    Histology, MyometrialInvasion, Cytology, PrimaryTumor
+
+Clique 5, 4 members, table size = 48:
+    Recurrence, Therapy, Survival3yr, Survival1yr
+
+Clique 4, 4 members, table size = 48:
+    Recurrence, Therapy, Survival3yr, Survival5yr
+
+Clique 3, 4 members, table size = 24:
+    LNM, Histology, PR, L1CAM
+
+Clique 2, 4 members, table size = 24:
+    LNM, Histology, L1CAM, p53
+
+Clique 1, 4 members, table size = 24:
+    LNM, Histology, PR, ER
+
+Total clique table size: 738
+
+
+The junction forest:
+
+Creating junction tree with clique 12 as root ...
+
+Cliques 11 and 12 linked, separator has 1 member and table size = 2:
+    LNM
+
+Cliques 10 and 11 linked, separator has 2 members and table size = 4:
+    LNM, CA125
+
+Cliques 9 and 10 linked, separator has 4 members and table size = 36:
+    LNM, Histology, LVSI, Recurrence
+
+Cliques 8 and 9 linked, separator has 4 members and table size = 48:
+    LNM, Histology, LVSI, Therapy
+
+Cliques 7 and 8 linked, separator has 4 members and table size = 72:
+    Histology, LVSI, Therapy, MyometrialInvasion
+
+Cliques 6 and 7 linked, separator has 3 members and table size = 18:
+    Histology, MyometrialInvasion, Cytology
+
+Cliques 5 and 9 linked, separator has 2 members and table size = 12:
+    Recurrence, Therapy
+
+Cliques 4 and 5 linked, separator has 3 members and table size = 24:
+    Recurrence, Therapy, Survival3yr
+
+Cliques 3 and 10 linked, separator has 2 members and table size = 6:
+    LNM, Histology
+
+Cliques 2 and 3 linked, separator has 3 members and table size = 12:
+    LNM, Histology, L1CAM
+
+Cliques 1 and 3 linked, separator has 3 members and table size = 12:
+    LNM, Histology, PR
+
+
+Assignment of potentials to cliques:
+
+    Node PR assigned to clique 1
+    Node Platelets assigned to clique 12
+    Node Survival1yr assigned to clique 5
+    Node LVSI assigned to clique 7
+    Node LNM assigned to clique 8
+    Node CA125 assigned to clique 11
+    Node Histology assigned to clique 6
+    Node p53 assigned to clique 2
+    Node PrimaryTumor assigned to clique 6
+    Node Therapy assigned to clique 9
+    Node Survival3yr assigned to clique 4
+    Node L1CAM assigned to clique 3
+    Node MyometrialInvasion assigned to clique 6
+    Node ER assigned to clique 1
+    Node Recurrence assigned to clique 10
+    Node Cytology assigned to clique 6
+    Node Survival5yr assigned to clique 4
+    Node CTMRI assigned to clique 11
+
+
+Checking conditional probability potentials:
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    PR:
+	positive   0.819512
+	negative   0.180488
+
+    Platelets:
+	lt_400     0.96734
+	ge_400     0.03266
+
+    Survival1yr:
+	yes        0.976761
+	no         0.0232392
+
+    LVSI:
+	no         0.839641
+	yes        0.160359
+
+    LNM:
+	no         0.914561
+	yes        0.0854388
+
+    CA125:
+	lt_35      0.827897
+	ge_35      0.172103
+
+    Histology:
+	grade_1    0.401697
+	grade_2    0.393314
+	grade_3    0.204989
+
+    p53:
+	wildtype   0.838932
+	mutant     0.161068
+
+    PrimaryTumor:
+	grade_1    0.580603
+	grade_2    0.231979
+	grade_3    0.187418
+
+    Therapy:
+	no         0.54413
+	radiotx    0.371654
+	chemotx    0.04987
+	chemoradiotx 0.0343462
+
+    Survival3yr:
+	yes        0.94839
+	no         0.0516099
+
+    L1CAM:
+	negative   0.895539
+	positive   0.104461
+
+    MyometrialInvasion:
+	no         0.0760157
+	lt_50      0.551769
+	ge_50      0.372215
+
+    ER:
+	positive   0.900806
+	negative   0.0991942
+
+    Recurrence:
+	no         0.867423
+	regional_distant 0.118028
+	local      0.0145488
+
+    Cytology:
+	no         0.963303
+	yes        0.0366972
+
+    Survival5yr:
+	yes        0.92556
+	no         0.0744399
+
+    CTMRI:
+	no         0.950768
+	yes        0.0492318
